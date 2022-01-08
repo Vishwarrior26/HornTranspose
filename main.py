@@ -11,12 +11,12 @@ notes = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B']
 print("Enter the concert pitches")
 str = input()
 
-result = ""
-for x in str.split(' '):
-    result += notes[notes.index(x) - 5] + " "
-print(result)
-
 # result = ""
 # for x in str.split(' '):
-#     result += change.get(x) + " "
+#     result += notes[notes.index(x) - 5] + " "
 # print(result)
+
+result = ""
+for x in str.split(' '):
+    result += change.get(x) + " "
+print(result)
